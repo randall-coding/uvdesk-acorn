@@ -1,4 +1,4 @@
-# Launch a UVdesk Server
+# Launch your own support ticket server (UVdesk)
 
 ## UVdesk
 UVdesk is a powerful open-source helpdesk and customer support solution designed to streamline ticket management and communication processes. It provides a feature-rich platform that enables businesses to efficiently handle customer queries, issues, and support requests.
