@@ -60,9 +60,9 @@ Visit your acorn dashboard to see if your deployment was successful.
 
 Click on the uvdesk deployment, and find the endpoint section on the right side panel.  This is your uvdesk instance link.
 
-![uvdesk_ui_div]()
+![uvdesk_acorn_ui](https://github.com/randall-coding/uvdesk-acorn/assets/39175191/fd65bf1c-011f-4fb8-a0da-3bfc019baa47)
 
-![uvdesk_endpoint]()
+![uvdesk_endpoint](https://github.com/randall-coding/uvdesk-acorn/assets/39175191/38aaa881-c316-4ca3-b7fd-fc2c9f2a6e7e)
 
 If there are any errors check your acorn via the UI or with the following command:
 
@@ -72,7 +72,7 @@ If there are any errors check your acorn via the UI or with the following comman
 
 First you have to go to your acorn uvdesk URL. Then follow the on screen installation wizard for configuring your uvdesk.
 
-![Welcome-wizard-2]()
+![image](https://github.com/randall-coding/uvdesk-acorn/assets/39175191/f44b2eb0-0c74-4fa2-b13f-45f8c95a0820)
 
 Use the following database credentials to install your UVDesk instance:
 
@@ -84,14 +84,16 @@ Use the following database credentials to install your UVDesk instance:
 
 Next, you will be prompt to create an admin account, follow the webpage's instruction to create one, then after proceeding you need to click on the "Install Now" button. After installing, you'll see this page:
 
-To sign in as an admin you will need to add `/en/member/login` to the main endpoint of click "Admin Panel" after installation.
+![uvdesk_success](https://github.com/randall-coding/uvdesk-acorn/assets/39175191/572affd9-a56f-4aae-a57a-7fc04c95db18)
+
+To sign in as an admin you will need to add `/en/member/login` to the main endpoint url or click "Admin Panel" after installation.
 
 For more detailed instructions on working with your UVDesk server see the getting started and configuration documentation.
 
 ## Conclusion
 That's all there is to it.  We've now got a UVDesk server up and running from an acorn image.
 
-! Final image
+![image](https://github.com/randall-coding/uvdesk-acorn/assets/39175191/5c3f2dc0-67b9-46e9-915a-3ed36689f111)
 
 
 ## References
