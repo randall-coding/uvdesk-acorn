@@ -65,10 +65,6 @@ Click on the uvdesk deployment, and find the endpoint section on the right side 
 
 ![uvdesk_endpoint](https://github.com/randall-coding/uvdesk-acorn/assets/39175191/38aaa881-c316-4ca3-b7fd-fc2c9f2a6e7e)
 
-If there are any errors check your acorn via the UI or with the following command:
-
-`acorn logs -f uvdesk`
-
 ## Configure UVdesk
 
 First you have to go to your acorn uvdesk URL. Then follow the on screen installation wizard for configuring your uvdesk.
