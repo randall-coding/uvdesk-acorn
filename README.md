@@ -2,7 +2,7 @@
 ## UVdesk
 UVdesk is a powerful open-source helpdesk and customer support solution designed to streamline ticket management and communication processes. It provides a feature-rich platform that enables businesses to efficiently handle customer queries, issues, and support requests.
 
-To make things even easier, we will deploy our UVdesk app using an acorn image.
+To make things even easier, we will deploy our UVdesk server using an acorn image.
 
 ![image](https://github.com/randall-coding/uvdesk-acorn/assets/39175191/5c3f2dc0-67b9-46e9-915a-3ed36689f111)
 
