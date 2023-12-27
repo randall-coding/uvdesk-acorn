@@ -1,0 +1,29 @@
+containers: {
+    uvdesk: {
+        image: "webkul/uvdesk:1.1.2"
+        ports: publish: "80/http",
+        command: "tail -f /dev/null"
+        dependsOn: ["db"]
+    }
+
+    db: {
+        image: "mariadb:10.6"
+        ports: {
+            expose: "3306/tcp"
+        }
+        dirs: {
+            "/var/lib/mysql": "mysqldata"
+        }
+        env: {
+            MYSQL_DATABASE: "uvdesk"
+            MYSQL_USER: "uvdeskuser"
+            MYSQL_PASSWORD: "secret://uvdesk/db_password"
+            MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+        }
+    }
+}
+
+volumes: mysqldata: {
+        size: "1Gi"
+        accessModes: "readWriteOnce"
+    }
