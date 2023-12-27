@@ -5,6 +5,8 @@ UVDesk is a powerful open-source helpdesk and customer support solution designed
 
 We will deploy our UVDesk app using an acorn image.
 
+![image](https://github.com/randall-coding/uvdesk-acorn/assets/39175191/5c3f2dc0-67b9-46e9-915a-3ed36689f111)
+
 ## What is Acorn?
 Acorn is a new cloud platform that allows you to easily deploy, develop and manage web services with containerization.  A single acorn image can deploy all that you need: from a single container webserver, to a multi service Kubernetes cluster with high availability.  Don't worry if you don't understand what all those terms mean; we don't have to know that in order to deploy our server.
 
@@ -92,9 +94,6 @@ For more detailed instructions on working with your UVDesk server see the gettin
 
 ## Conclusion
 That's all there is to it.  We've now got a UVDesk server up and running from an acorn image.
-
-![image](https://github.com/randall-coding/uvdesk-acorn/assets/39175191/5c3f2dc0-67b9-46e9-915a-3ed36689f111)
-
 
 ## References
 * [Install UVDesk](https://www.uvdesk.com/en/blog/installation-open-source-helpdesk-uvdesk/)
