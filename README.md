@@ -85,10 +85,9 @@ Next, you will be prompt to create an admin account, follow the webpage's instru
 
 To sign in as an admin you will need to add `/en/member/login` to the main endpoint url or click "Admin Panel" after installation.
 
-For more detailed instructions on working with your UVdesk server see the getting started and configuration documentation.
-
 ## Conclusion
 That's all there is to it.  We've now got a UVdesk server up and running from an acorn image.
+For more detailed instructions on working with your UVdesk server see the getting started and configuration documentation.
 
 ## References
 * [Install UVdesk](https://www.uvdesk.com/en/blog/installation-open-source-helpdesk-uvdesk/)
