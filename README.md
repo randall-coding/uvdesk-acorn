@@ -1,9 +1,9 @@
-# Launch a UVDesk Server
+# Launch a UVdesk Server
 
-## UVDesk
-UVDesk is a powerful open-source helpdesk and customer support solution designed to streamline ticket management and communication processes. It provides a feature-rich platform that enables businesses to efficiently handle customer queries, issues, and support requests.
+## UVdesk
+UVdesk is a powerful open-source helpdesk and customer support solution designed to streamline ticket management and communication processes. It provides a feature-rich platform that enables businesses to efficiently handle customer queries, issues, and support requests.
 
-We will deploy our UVDesk app using an acorn image.
+We will deploy our UVdesk app using an acorn image.
 
 ![image](https://github.com/randall-coding/uvdesk-acorn/assets/39175191/5c3f2dc0-67b9-46e9-915a-3ed36689f111)
 
@@ -70,13 +70,13 @@ If there are any errors check your acorn via the UI or with the following comman
 
 `acorn logs -f uvdesk`
 
-## Configure UVDesk
+## Configure UVdesk
 
 First you have to go to your acorn uvdesk URL. Then follow the on screen installation wizard for configuring your uvdesk.
 
 ![image](https://github.com/randall-coding/uvdesk-acorn/assets/39175191/f44b2eb0-0c74-4fa2-b13f-45f8c95a0820)
 
-Use the following database credentials to install your UVDesk instance:
+Use the following database credentials to install your UVdesk instance:
 
 - Server: `db`
 - Port: `3306`
@@ -90,11 +90,11 @@ Next, you will be prompt to create an admin account, follow the webpage's instru
 
 To sign in as an admin you will need to add `/en/member/login` to the main endpoint url or click "Admin Panel" after installation.
 
-For more detailed instructions on working with your UVDesk server see the getting started and configuration documentation.
+For more detailed instructions on working with your UVdesk server see the getting started and configuration documentation.
 
 ## Conclusion
-That's all there is to it.  We've now got a UVDesk server up and running from an acorn image.
+That's all there is to it.  We've now got a UVdesk server up and running from an acorn image.
 
 ## References
-* [Install UVDesk](https://www.uvdesk.com/en/blog/installation-open-source-helpdesk-uvdesk/)
+* [Install UVdesk](https://www.uvdesk.com/en/blog/installation-open-source-helpdesk-uvdesk/)
 * [Getting started with Acorn](https://docs.acorn.io/getting-started)
