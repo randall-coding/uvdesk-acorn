@@ -91,4 +91,5 @@ For more detailed instructions on working with your UVdesk server see the gettin
 
 ## References
 * [Install UVdesk](https://www.uvdesk.com/en/blog/installation-open-source-helpdesk-uvdesk/)
+* [UVdesk documentation](https://docs.uvdesk.com)
 * [Getting started with Acorn](https://docs.acorn.io/getting-started)
