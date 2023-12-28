@@ -19,8 +19,3 @@ services: mariadb: {
 secrets: "uvdesk-mariadb": {
     external: "uvdesk-mariadb"
 }
-
-volumes: mysqldata: {
-        size: "1Gi"
-        accessModes: "readWriteOnce"
-    }
