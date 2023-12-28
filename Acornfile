@@ -3,24 +3,21 @@ containers: {
         image: "webkul/uvdesk:1.1.2"
         ports: publish: "80/http",
         command: "tail -f /dev/null"
-        dependsOn: ["db"]
+        dependsOn: ["mariadb"]
+        consumes: ["mariadb"]
     }
+}
 
-    db: {
-        image: "mariadb:10.6"
-        ports: {
-            expose: "3306/tcp"
-        }
-        dirs: {
-            "/var/lib/mysql": "mysqldata"
-        }
-        env: {
-            MYSQL_DATABASE: "uvdesk"
-            MYSQL_USER: "uvdeskuser"
-            MYSQL_PASSWORD: "secret://uvdesk/db_password"
-            MYSQL_RANDOM_ROOT_PASSWORD: "yes"
-        }
+services: mariadb: {
+    image: "ghcr.io/acorn-io/mariadb:v10.#.#-#"
+    serviceArgs: {
+        dbName: "uvdesk"
     }
+    secrets: ["uvdesk-mariadb: user"]
+}
+
+secrets: "uvdesk-mariadb": {
+    external: "uvdesk-mariadb"
 }
 
 volumes: mysqldata: {

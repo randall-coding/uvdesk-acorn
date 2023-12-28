@@ -37,11 +37,13 @@ Back in our local command terminal login to acorn.io with: <br>
 
 ## Preparing Secrets
 Your server has settings controlled by a "secrets" object: 
- * **uvdesk/db_password** - Password for mariadb database (must be at least 10 characters)
+ * **password** - Password for mariadb database (must be at least 10 characters)
 
 Create secrets for your application using acorn-cli.  Change the <> values to your actual credentials.
 ```
-acorn secret create uvdesk --data db_password=<password>
+acorn secret create uvdesk-mariadb 
+  --data password=<password>
+  --data username=uvdeskuser
 ```
 
 ## Deploying Acorn
@@ -55,7 +57,7 @@ Next build and run.
 
 `acorn build -t uvdesk`
 
-`acorn run -s uvdesk:uvdesk -n uvdesk uvdesk`
+`acorn run -s uvdesk-mariadb:uvdesk-mariadb -n uvdesk uvdesk`
 
 Visit your acorn dashboard to see if your deployment was successful.
 
@@ -73,10 +75,10 @@ First you have to go to your acorn uvdesk URL. Then follow the on screen install
 
 Use the following database credentials to install your UVdesk instance:
 
-- Server: `db`
+- Server: `mariadb`
 - Port: `3306`
 - Username: `uvdeskuser`
-- Password: `secret://uvdesk/db_password`
+- Password: `password added in your secret`
 - Database: `uvdesk`
 
 Next, you will be prompt to create an admin account, follow the webpage's instruction to create one, then after proceeding you need to click on the "Install Now" button. After installing, you'll see this page:
